@@ -73,6 +73,53 @@
     <div class="container">
 
 <!--        start experimental code -->
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Navigation</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            padding: 50px;
+            height: 100vh; /* For demonstration */
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            background: #333;
+            color: white;
+            width: 100%;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+</body>
+</html>
+
 
 <div class="row mt-4">
     <!-- QUICK BIO ABOUT ME -->
@@ -89,6 +136,10 @@
              
             <div class="col-md-6">
                 <div class="embed-responsive embed-responsive-16by9">
+    <section id="portfolio" style="background: lightgreen;">
+    <h1>Portfolio</h1>
+    <p>This is the portfolio section.</p>
+</section>
                     
                     <!-- Video 1 below -->
 
@@ -210,6 +261,10 @@
 </div>
                      
   <div>
+      <section id="about" style="background: lightblue;">
+    <h1>About</h1>
+    <p>This is the about section.</p>
+</section>
       <p style="font-size: 24px;">ABOUT ME</p>
       
       <p>Hi. I like making stuff. I'm pretty open to whatever type of video project, as long as it's interesting, and maybe a little challenging. Here are 10 random facts about me.</p>
@@ -292,7 +347,12 @@
 <div class="row">
        <div class="col-md-6">
            <a href="https://drive.google.com/file/d/0B4v4-RliW7v1Y0M3cWs3THZ6WVU/view" > <img=https://static.wixstatic.com/media/62a3bb_aada813c4811408b97c449c723db0b7b.jpg/v1/fit/w_1061,h_841,q_75,usm_0.50_1.20_0.00/62a3bb_aada813c4811408b97c449c723db0b7b.jpg/> </a>
-          
+        
+
+<section id="contact" style="background: lightcoral;">
+    <h1>Contact</h1>
+    <p>This is the contact section.</p>
+</section>
            <H1>Contact Me at</H1>
            <p>macha@macharose.com</p>
            <a href="http://www.macharose.com">macharose.com</a>
