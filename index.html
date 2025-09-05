@@ -1,398 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-69483729-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-    
 <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <title>Macha Makes Stuff</title>
+  <meta name="description" content="Director & Producer portfolio of Macha Rose: commercial, branded, and documentary work." />
+  <meta name="author" content="Macha Rose" />
 
-    <title>Macha Makes Stuff</title>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <!-- Google Fonts (HTTPS to avoid mixed content) -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
 
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/creative.css" type="text/css" />
 
-    <style>
-        /* Your own custom CSS goes here */
-      
-        header {
-    background-image: url('img/macha me darcy padilla.jpeg'); /* Replace 'path_to_new_image.jpg' with your new image's path */
-    background-size: cover; /* Ensures the image covers the entire header */
-    background-position: center; /* Centers the image */
-}
+  <style>
+    html { scroll-behavior: smooth; }
 
-        hr {
-            max-width: 50px;
-            border-color: #f05f40;
-            border-width: 3px;
-        }
+    /* Give space for fixed nav */
+    body { padding-top: 60px; }
 
-        .header-content-inner h1,
-        .header-content-inner p{
-            color: red;
-            font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', 'sans serif';
-        }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #333;
+      color: #fff;
+      width: 100%;
+      padding: 10px 16px;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+    }
+    nav a:hover { text-decoration: underline; }
 
-    </style>
+    header {
+      /* Rename file to avoid spaces or URL-encode them */
+      background-image: url('img/macha-me-darcy-padilla.jpg'); 
+      background-size: cover;
+      background-position: center;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
+    hr {
+      max-width: 50px;
+      border-color: #f05f40;
+      border-width: 3px;
+    }
+
+    .header-content-inner h1,
+    .header-content-inner p{
+      color: red;
+      font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+      text-shadow: 0 2px 6px rgba(0,0,0,.35);
+    }
+
+    section { padding: 50px 0; }
+    .mt-4 { margin-top: 1.5rem; }
+  </style>
+
+  <!-- (Optional) Universal Analytics (legacy). Consider upgrading to GA4. -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-69483729-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 
 <body>
 
-
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Macha Rose</h1>
-                <hr>
-                <p>Director | Producer</p>
-            </div>
-        </div>
-    </header>
-
-    <div class="container">
-
-<!--        start experimental code -->
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Single Page Navigation</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        section {
-            padding: 50px;
-            height: 100vh; /* For demonstration */
-        }
-
-        nav {
-            position: fixed;
-            top: 0;
-            background: #333;
-            color: white;
-            width: 100%;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-
-<nav>
+  <!-- Simple fixed nav -->
+  <nav>
+    <a href="#top">Home</a>
+    <a href="#portfolio">Portfolio</a>
     <a href="#about">About</a>
+    <a href="#dataviz">Data Viz</a>
     <a href="#contact">Contact</a>
-</nav>
+  </nav>
 
-</body>
-</html>
+  <header id="top">
+    <div class="header-content">
+      <div class="header-content-inner">
+        <h1>Macha Rose</h1>
+        <hr />
+        <p>Director | Producer</p>
+      </div>
+    </div>
+  </header>
 
+  <main class="container">
 
-<div class="row mt-4">
-    <!-- QUICK BIO ABOUT ME -->
-</div>
-         <p> Macha is a director and producer specializing in crafting compelling visual stories for clients ranging from global brands to cultural institutions. With experience spanning commercial, branded, and documentary work, she has collaborated with companies like Western Union, Grove Co., Brooklyn Museum, and Nutella, bringing a keen eye for storytelling and production expertise to projects of all scales.</p>
-    <p> Available to work in New York City and the Bay Area, CA</p>
-        <!-- Row 1 - videos ***********************************************************************-->
-<div class="row">
-    
-       
-       <h1>Portfolio</h1>
-<!-----    This is the portfolio section.--->
-        
- </div>
-        
-         <div class="row">
-             
+    <section class="mt-4" aria-label="Quick bio blurb">
+      <p>Macha is a director and producer specializing in crafting compelling visual stories for clients ranging from global brands to cultural institutions. With experience spanning commercial, branded, and documentary work, she has collaborated with companies like Western Union, Grove Co., Brooklyn Museum, and Nutella, bringing a keen eye for storytelling and production expertise to projects of all scales.</p>
+      <p>Available to work in New York City and the Bay Area, CA</p>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <h1>Portfolio</h1>
+
+      <!-- Row 1 -->
+      <div class="row">
         <div class="col-md-6">
-<div class="embed-responsive embed-responsive-16by9">
- 
-                    
-                    <!-- Video 1 below -->
-
- <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/909638099?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Google Sesame Street -  Wellbeing 01"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                       
-                </div>
-                
-<!--             add p tag description outside of video coding but before next video, and before last div-->            
-            
-             </div>
-             
-            
-             
-             <!-- Video 2 below -->
-             
-             
-            <div class="col-md-6">
-                <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/FIosGtU65sw?si=DkGHTvY5xrb4XFte" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
-                </div>
-     
-                
-<!--                text before last div, 2 here because second div is container-->
-             </div>
-             
-            
-             
-        </div>
-     
-
-  
-
-        <!-- Row 2 Videos   **************************************************************-->
-
-
-                 <div class="row">
-            <div class="col-md-6">
-                <div class="embed-responsive embed-responsive-16by9">
-                    
-                    <!-- Video 3 below -->
-
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/oUWg35egbcs?si=fzOnszULuIHT9W6b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    
- 
-                    
-                    
-                </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <div style="padding:56.25% 0 0 0;position:relative;">
+              <iframe src="https://player.vimeo.com/video/909638099?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                      style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                      title="Google Sesame Street - Wellbeing 01"></iframe>
             </div>
-                  
-                     
-                     
-             <!-- Video 4 below -->
-                     
-            <div class="col-md-6">
-                <div class="embed-responsive embed-responsive-16by9">
-                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/777136430?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Western Union│Holiday Cheer"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                
-            </div>
-                
-             </div>
-                     
-        </div>
-        
-         <!-- Row 3 Videos   **************************************************************-->
-
-
-                 <div class="row">
-            <div class="col-md-6">
-                <div class="embed-responsive embed-responsive-16by9">
-                    
-                    <!-- Video 5 below -->
-
-                  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/681988215?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Be In The Know 60s - Nextdoor 16x9"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                    
- 
-                    
-                    
-                </div>
-            </div>
-                  
-                     
-                     
-             <!-- Video 6 below -->
-                     
-            <div class="col-md-6">
-                <div class="embed-responsive embed-responsive-16by9">
-                <div style="padding:56.25% 0 0 0;position:relative;">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q0A2AVA0pSs?si=CeJJ6bAsUYLaEsc6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                
-            </div>
-                
-             </div>
-                     
-        </div>
-                     <div class="row mt-4">
-    <!-- Hero Video -->
-</div>
-     
-<!--cnrl shift ? extra row for video project - HERO VIDEO-->
-                     
-            <div class="row">
-            <div class="col-md-12">
-                <div class="embed-responsive embed-responsive-16by9">
-                    
-                    
-    
-                    
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/V8AT2fGBfmg?si=c4PpwIKKIqkV6pN3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-         
-                </div>
-                <p>figuration - a short film I directed for a 7 day competition, currently streaming on Labocine. This is a passion project born from my experience as a laboratory scientist, my interest in epidemiology and how those intersect with visual storytelling.</p>
-            </div>
-           
+          </div>
         </div>
 
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/FIosGtU65sw?si=DkGHTvY5xrb4XFte"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
 
-<div class="row mt-4">
-    <!-- spacing -->
-</div>
-                     
-  <div>
-      <section id="about" style="background: white;">
-    <h1>About</h1>
-    
-<p>Hi. I like making stuff. I'm pretty open to whatever type of video project, as long as it's interesting, and maybe a little challenging. Here are 10 random facts about me.</p>
+      <!-- Row 2 -->
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/oUWg35egbcs?si=fzOnszULuIHT9W6b"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+          </div>
+        </div>
 
-<p>1. Yes, I genuinely like spreadsheets.</p>​
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <div style="padding:56.25% 0 0 0;position:relative;">
+              <iframe src="https://player.vimeo.com/video/777136430?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                      style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                      title="Western Union│Holiday Cheer"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<p>2. I like to cook and have a fledgeling food content instagram @macha.cooks. </p>
+      <!-- Row 3 -->
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <div style="padding:56.25% 0 0 0;position:relative;">
+              <iframe src="https://player.vimeo.com/video/681988215?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                      style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                      title="Be In The Know 60s - Nextdoor 16x9"></iframe>
+            </div>
+          </div>
+        </div>
 
-<p>3. If I haven't told you I'm from Oakland, I will like 3 times at some point today. Yes, I have full bicoastal capabilities (for the Bay Area and New York, obviously). </p>
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/Q0A2AVA0pSs?si=CeJJ6bAsUYLaEsc6"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
 
-<p>4. I have directed several short films, and have found I love Black Mirror style SciFi - as I have a past career in microbiology and genetics.</p>
-      
-<p>5. Coffee & Cigarettes, Jim Jarmusch - taught me that filmmaking can be whatever you want it to be, and that film school rules are arbitrary - you just have to know the rules to know why you're breaking them. I also happen to be a professor of film studies, so I guess someone thinks I'm an expert on this.</p>
+      <!-- Hero Video -->
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/V8AT2fGBfmg?si=c4PpwIKKIqkV6pN3"
+                    title="figuration - short film"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+          </div>
+          <p><em>figuration</em> — a short film I directed for a 7-day competition, currently streaming on Labocine. This is a passion project born from my experience as a laboratory scientist, my interest in epidemiology, and how those intersect with visual storytelling.</p>
+        </div>
+      </div>
+    </section>
 
-<p>6. I can produce the heck out of your project by staying in my lane, or heavily collaborating. It's up to how the director works. </p>
+    <!-- About -->
+    <section id="about">
+      <h1>About</h1>
+      <p>Hi. I like making stuff. I'm pretty open to whatever type of video project, as long as it's interesting, and maybe a little challenging. Here are 10 random facts about me.</p>
+      <ol>
+        <li>Yes, I genuinely like spreadsheets.</li>
+        <li>I like to cook and have a fledgling food content instagram <a href="https://www.instagram.com/macha.cooks/" target="_blank" rel="noopener">@macha.cooks</a>.</li>
+        <li>If I haven't told you I'm from Oakland, I will like 3 times at some point today. Yes, I have full bicoastal capabilities (for the Bay Area and New York, obviously).</li>
+        <li>I have directed several short films, and have found I love Black Mirror style Sci-Fi — I have a past career in microbiology and genetics.</li>
+        <li><em>Coffee &amp; Cigarettes</em> (Jim Jarmusch) taught me that filmmaking can be whatever you want it to be… I’m also a professor of film studies.</li>
+        <li>I can produce the heck out of your project by staying in my lane, or heavily collaborating. Your call.</li>
+        <li>I'm currently long-term producing a documentary about an aspect of the end of the war in Afghanistan. I'm the only non-military on the team.</li>
+        <li>I know a lot of really talented people — both union and non-union — and how to find them.</li>
+        <li>I love beagles and chihuahuas. Especially cheagles. RIP Cesar.</li>
+        <li>Dream job: exploring food, culture, art, environment, and their intersections with wealth and power (or: producer dream — regular hours and regular pay, lol).</li>
+      </ol>
+    </section>
 
-<p>7. I'm currently long term producing a documentary about an aspect of the end of the war in Afghanistan. I'm the only non military on the team. </p>
+    <!-- Data Visualization -->
+    <section id="dataviz">
+      <h1>Data Visualization</h1>
 
-<p>8. I know a lot of really talented people - both union and non union. I have the people to get this done (or I know how to find them).</p>
+      <div class="row text-center">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="900" height="800" frameborder="0" scrolling="no"
+              src="https://plot.ly/~macharose/42.embed" title="Disease Prevalence"></iframe>
+          </div>
+          <p>Disease Prevalence</p>
+        </div>
 
-<p>9. I love beagles and chihuahuas. Especially cheagles. RIP Cesar. </p>
-
-<p>10. My dream job would probably allow for some exploration into food, culture, art,  environment, and how they intersect with wealth and power. Or every producers dream job - regular hours and regular pay lol. </p>
-</section>
-      
-
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe height="400" width="100%" frameborder="0"
+              src="https://macharose.github.io/data-viz/"
+              title="Data viz gallery"></iframe>
+          </div>
+        </div>
+      </div>
 
       <div class="row mt-4">
-    <!-- just giving space break -->
-</div>
-
-        <!-- Row 3 - Data Vizualization -->
-        <div class="row"> 
-            <H1>Data Visualization</H1>
-        
+        <div class="col-md-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="900" height="800" frameborder="0" scrolling="no"
+              src="https://plot.ly/~macharose/66.embed" title="Incomplete Immunizations"></iframe>
+          </div>
         </div>
-        
-        <div class="row text-center">
-            <div class="col-md-6">
-                <div class="embed-responsive embed-responsive-16by9">
-                    
-                    
-                    <!-- Plotly graph 1 rich countries and disease rates -->
-                    
-                    
-                    <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~macharose/42.embed"></iframe>
-                <p>Disease Prevalence</p>
-    
+      </div>
+    </section>
 
-        <!-- Row 4 - Percentages of incomplete immunizationsData viz 2 -->
-     <div class="row">
-            <div class="col-md-12">
-                <div class="embed-responsive embed-responsive-16by9">
-                    
-                    <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~macharose/66.embed"></iframe>
-                
-                    
-                </div>
-         </div>
-        </div>
-        
-    <!--Row 5 Data Map of healthcare-->
-
-                    <H1>Data Visualization</H1>
-
-                    <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~macharose/42.embed"></iframe>
-                <p>Disease Prevalence</p>
-                    
-
-                    <!-- Data wrapper graph Food stamp use over time -->
-                </div>
-            </div>
-            <div class="col-md-6">
-                <iframe height="400" width="100%" frameborder="0" src="http://macharose.github.io/data-viz/"></iframe>
-            </div>
-        </div>
-    
-
-        <!-- Row 4 - Percentages of incomplete immunizationsData viz 2 -->
-     <div class="row">
-
+    <!-- Image + Podcast -->
+    <section class="mt-4">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="https://drive.google.com/file/d/0B4v4-RliW7v1Y0M3cWs3THZ6WVU/view" target="_blank" rel="noopener">
+            <img
+              src="https://static.wixstatic.com/media/62a3bb_aada813c4811408b97c449c723db0b7b.jpg/v1/fit/w_1061,h_841,q_75,usm_0.50_1.20_0.00/62a3bb_aada813c4811408b97c449c723db0b7b.jpg"
+              alt="Portfolio still"
+              class="img-responsive" />
+          </a>
         </div>
 
-    <!--Row 5 Data Map of healthcare-->
-     <div class="row">
-            <div class="col-md-12">
-            
-            </div>
+        <div class="col-md-6">
+          <h1>Got time? Listen to an example of my podcast work</h1>
+          <iframe width="100%" height="450" scrolling="no" frameborder="no"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233868337&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"
+            title="Podcast sample"></iframe>
+          <p>For the full blog and all the episodes go <a href="http://sundaynightjamsessions.blogspot.com/" target="_blank" rel="noopener">here</a>.</p>
         </div>
- 
+      </div>
+    </section>
 
-<div class="row">
-       <div class="col-md-6">
+    <!-- Contact -->
+    <section id="contact" style="background: beige;">
+      <h1>Contact</h1>
+      <p><a href="mailto:macha@macharose.com">macha@macharose.com</a></p>
+      <p><a href="https://www.macharose.com" target="_blank" rel="noopener">macharose.com</a></p>
+      <p><a href="https://www.threads.net/@macharose" target="_blank" rel="noopener">@macharose on Threads</a></p>
+      <p><a href="https://www.instagram.com/macharose/" target="_blank" rel="noopener">@macharose on Instagram</a></p>
+    </section>
 
-<div class="row">
-       <div class="col-md-6">
-           <a href="https://drive.google.com/file/d/0B4v4-RliW7v1Y0M3cWs3THZ6WVU/view" > <img=https://static.wixstatic.com/media/62a3bb_aada813c4811408b97c449c723db0b7b.jpg/v1/fit/w_1061,h_841,q_75,usm_0.50_1.20_0.00/62a3bb_aada813c4811408b97c449c723db0b7b.jpg/> 
-           </a>
-        
+  </main>
 
-<section id="contact" style="background: beige;">
-    <h1>Contact</h1>
-    <p>macha@macharose.com</p>
-    <a href="http://www.macharose.com">macharose.com</a>
-    <p><a href="https://https://www.threads.net/@macharose">@macharose threads</a></p>
-    <p><a href="https://www.instagram.com/macharose/">@macharose instagram</p>
-</section>
-           
-        
-           
-           
-        </div> 
-        <div>
-            <div class="col-md-6">
-            <H1>Got time? Listen to an example of my podcast work</H1>
-            <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233868337&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-            <p>For the full blog and all the episodes go</p> <a href="http://sundaynightjamsessions.blogspot.com/">here.</a>
-            
-    
-            </div>
-    </div>
-        </div>
-
-
-
-    </div>
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/creative.js"></script>
-
+  <!-- JS (jQuery first, then Bootstrap, then plugins) -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.fittext.js"></script>
+  <script src="js/creative.js"></script>
 </body>
-
 </html>
