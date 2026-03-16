@@ -43,7 +43,6 @@
     nav a:hover { text-decoration: underline; }
 
     header {
-      /* Rename file to avoid spaces or URL-encode them */
       background-image: url('img/macha-me-darcy-padilla.jpeg'); 
       background-size: cover;
       background-position: center 40%;
@@ -61,7 +60,7 @@
     }
 
     .header-content-inner h1,
-    .header-content-inner p{
+    .header-content-inner p {
       color: red;
       font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
       text-shadow: 0 2px 6px rgba(0,0,0,.35);
@@ -69,6 +68,24 @@
 
     section { padding: 50px 0; }
     .mt-4 { margin-top: 1.5rem; }
+
+    .portfolio-thumb {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: #eee;
+    }
+
+    .portfolio-thumb img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   </style>
 
   <!-- (Optional) Universal Analytics (legacy). Consider upgrading to GA4. -->
@@ -107,172 +124,190 @@
   <main class="container">
 
     <section class="mt-4" aria-label="Quick bio blurb">
-      <p><strong>Macha is a director and producer who turns complex ideas into clear, emotionally resonant stories. She works across commercial, branded, and documentary projects, bringing sharp creative development, decisive on-set leadership, and a collaborative, production-minded approach. Her clients include Western Union, Grove Co., the Brooklyn Museum, At&T, Hasbro and Nutella—brands and institutions that trust her to elevate narrative, performance, and visual tone.</strong></p>
+      <p><strong>Macha is a director and producer who turns complex ideas into clear, emotionally resonant stories. She works across commercial, branded, and documentary projects, bringing sharp creative development, decisive on-set leadership, and a collaborative, production-minded approach. Her clients include Western Union, Grove Co., the Brooklyn Museum, At&amp;T, Hasbro and Nutella—brands and institutions that trust her to elevate narrative, performance, and visual tone.</strong></p>
 
-<p><strong>Based in NYC and the Bay Area, available for projects nationwide.</strong></p>
-
+      <p><strong>Based in NYC and the Bay Area, available for projects nationwide.</strong></p>
     </section>
 
     <!-- Portfolio -->
-<section id="portfolio">
-  <h1>Portfolio</h1>
+    <section id="portfolio">
+      <h1>Portfolio</h1>
 
-  <!-- Row 1 (NEW) -->
-  <div class="row">
-    <div class="col-md-6">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/Yslc1EyAD1Q"
-                title="Hasbro DJ Furby"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-      </div>
-      <p class="role-credit" style="margin-top:8px;">
-        <strong>Line Producer</strong><br>
-        <em>Casting · Creative producer · Crew hiring · Scheduling · Budget</em>
-      </p>
-    </div>
+      <!-- Row 1 -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/Yslc1EyAD1Q"
+                    title="Hasbro DJ Furby"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+          </div>
+          <p class="role-credit" style="margin-top:8px;">
+            <strong>Line Producer</strong><br>
+            <em>Casting · Creative producer · Crew hiring · Scheduling · Budget</em>
+          </p>
+        </div>
 
-    <div class="col-md-6">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/rdWXxT9Y7y0"
-                title="Hasbro Furby Gold Glam"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-      </div>
-      <p class="role-credit" style="margin-top:8px;">
-        <strong>Line Producer</strong><br>
-        <em>Casting · Creative producer · Crew hiring · Scheduling · Budget</em>
-      </p>
-    </div>
-  </div>
-
-  <!-- Row 2 (former Row 1) -->
-  <div class="row mt-4">
-    <div class="col-md-6">
-      <div class="embed-responsive embed-responsive-16by9">
-        <div style="padding:56.25% 0 0 0;position:relative;">
-          <iframe src="https://player.vimeo.com/video/909638099?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                  frameborder="0"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                  style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                  title="Google Sesame Street - Wellbeing 01"></iframe>
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/rdWXxT9Y7y0"
+                    title="Hasbro Furby Gold Glam"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+          </div>
+          <p class="role-credit" style="margin-top:8px;">
+            <strong>Line Producer</strong><br>
+            <em>Casting · Creative producer · Crew hiring · Scheduling · Budget</em>
+          </p>
         </div>
       </div>
-      <p class="role-credit" style="margin-top:8px;">
-        <strong>Producer</strong><br>
-        <em>Creative development · Crew hiring · Scheduling · Budget</em>
-      </p>
-    </div>
 
-    <div class="col-md-6">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/FIosGtU65sw?si=DkGHTvY5xrb4XFte"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen></iframe>
-      </div>
-      <p class="role-credit" style="margin-top:8px;">
-        <strong>Director</strong><br>
-        <em>Directing · Creative development · Casting · Locations · Crew hiring · Scheduling · Post supervision</em>
-      </p>
-    </div>
-  </div>
-
-  <!-- Row 3 (former Row 2) -->
-  <div class="row mt-4">
-    <div class="col-md-6">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/oUWg35egbcs?si=fzOnszULuIHT9W6b"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen></iframe>
-      </div>
-      <p class="role-credit" style="margin-top:8px;">
-        <strong>Director</strong><br>
-        <em>Directing · Creative development · Casting · Locations · Crew hiring · Scheduling · Budget</em>
-      </p>
-    </div>
-
-    <div class="col-md-6">
-      <div class="embed-responsive embed-responsive-16by9">
-        <div style="padding:56.25% 0 0 0;position:relative;">
-          <iframe src="https://player.vimeo.com/video/777136430?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                  frameborder="0"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                  style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                  title="Western Union│Holiday Cheer"></iframe>
+      <!-- Row 2: AT&T image-only project -->
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <a href="https://www.attconnects.com/stories/milwaukee-fire-chief-aaron-lipskis-firstnet-story-reliable-communication-is-the-difference-between-life-and-death/"
+               target="_blank"
+               rel="noopener"
+               class="portfolio-thumb">
+              <img src="img/Lipski-2025-milwaukee.png" alt="AT&T FirstNet project still" />
+            </a>
+          </div>
+          <p class="role-credit" style="margin-top:8px;">
+            <strong>Line Producer</strong><br>
+            <em>Local crew hiring · Scheduling · Budget · Production management</em><br>
+            <a href="https://www.attconnects.com/stories/milwaukee-fire-chief-aaron-lipskis-firstnet-story-reliable-communication-is-the-difference-between-life-and-death/"
+               target="_blank"
+               rel="noopener">View project here</a>
+          </p>
         </div>
       </div>
-      <p class="role-credit" style="margin-top:8px;">
-        <strong>Producer</strong><br>
-        <em>Creative development · Casting · Locations · Crew hiring · Scheduling · Budget</em>
-      </p>
-    </div>
-  </div>
 
-  <!-- Row 4 (former Row 3) -->
-  <div class="row mt-4">
-    <div class="col-md-6">
-      <div class="embed-responsive embed-responsive-16by9">
-        <div style="padding:56.25% 0 0 0;position:relative;">
-          <iframe src="https://player.vimeo.com/video/681988215?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                  frameborder="0"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                  style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                  title="Be In The Know 60s - Nextdoor 16x9"></iframe>
+      <!-- Row 3 -->
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <div style="padding:56.25% 0 0 0;position:relative;">
+              <iframe src="https://player.vimeo.com/video/909638099?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                      style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                      title="Google Sesame Street - Wellbeing 01"></iframe>
+            </div>
+          </div>
+          <p class="role-credit" style="margin-top:8px;">
+            <strong>Producer</strong><br>
+            <em>Creative development · Crew hiring · Scheduling · Budget</em>
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/FIosGtU65sw?si=DkGHTvY5xrb4XFte"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+          </div>
+          <p class="role-credit" style="margin-top:8px;">
+            <strong>Director</strong><br>
+            <em>Directing · Creative development · Casting · Locations · Crew hiring · Scheduling · Post supervision</em>
+          </p>
         </div>
       </div>
-      <p class="role-credit" style="margin-top:8px;">
-        <strong>Producer</strong><br>
-        <em>Creative development · Casting · Locations · Crew hiring · Scheduling · Budget · Post Supervisor</em>
-      </p>
-    </div>
 
-    <div class="col-md-6">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/Q0A2AVA0pSs?si=CeJJ6bAsUYLaEsc6"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen></iframe>
+      <!-- Row 4 -->
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/oUWg35egbcs?si=fzOnszULuIHT9W6b"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+          </div>
+          <p class="role-credit" style="margin-top:8px;">
+            <strong>Director</strong><br>
+            <em>Directing · Creative development · Casting · Locations · Crew hiring · Scheduling · Budget</em>
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <div style="padding:56.25% 0 0 0;position:relative;">
+              <iframe src="https://player.vimeo.com/video/777136430?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                      style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                      title="Western Union│Holiday Cheer"></iframe>
+            </div>
+          </div>
+          <p class="role-credit" style="margin-top:8px;">
+            <strong>Producer</strong><br>
+            <em>Creative development · Casting · Locations · Crew hiring · Scheduling · Budget</em>
+          </p>
+        </div>
       </div>
-      <p class="role-credit" style="margin-top:8px;">
-        <strong>Director</strong><br>
-        <em>Creative development · Casting · Locations · Crew hiring · Scheduling · Budget</em>
-      </p>
-    </div>
-  </div>
 
-  <!-- Hero Video -->
-  <div class="row mt-4">
-    <div class="col-md-12">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/V8AT2fGBfmg?si=c4PpwIKKIqkV6pN3"
-                title="figuration - short film"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen></iframe>
+      <!-- Row 5 -->
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <div style="padding:56.25% 0 0 0;position:relative;">
+              <iframe src="https://player.vimeo.com/video/681988215?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                      style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                      title="Be In The Know 60s - Nextdoor 16x9"></iframe>
+            </div>
+          </div>
+          <p class="role-credit" style="margin-top:8px;">
+            <strong>Producer</strong><br>
+            <em>Creative development · Casting · Locations · Crew hiring · Scheduling · Budget · Post Supervisor</em>
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/Q0A2AVA0pSs?si=CeJJ6bAsUYLaEsc6"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+          </div>
+          <p class="role-credit" style="margin-top:8px;">
+            <strong>Director</strong><br>
+            <em>Creative development · Casting · Locations · Crew hiring · Scheduling · Budget</em>
+          </p>
+        </div>
       </div>
-      <p><em>figuration</em> — a short film I directed for a 7-day competition, currently streaming on Labocine. This is a passion project born from my experience as a laboratory scientist, my interest in epidemiology, and how those intersect with visual storytelling.</p>
-    </div>
-  </div>
 
-</section>
-
+      <!-- Hero Video -->
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/V8AT2fGBfmg?si=c4PpwIKKIqkV6pN3"
+                    title="figuration - short film"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+          </div>
+          <p><em>figuration</em> — a short film I directed for a 7-day competition, currently streaming on Labocine. This is a passion project born from my experience as a laboratory scientist, my interest in epidemiology, and how those intersect with visual storytelling.</p>
+        </div>
+      </div>
+    </section>
 
     <!-- About -->
     <section id="about">
@@ -296,10 +331,9 @@
     <section id="dataviz">
       <h1>Data Visualization</h1>
 
+      <p>Disease Prevalence</p>
 
-          <p>Disease Prevalence</p>
-        </div>
-
+      <div class="row">
         <div class="col-md-6">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe height="400" width="100%" frameborder="0"
@@ -308,8 +342,6 @@
           </div>
         </div>
       </div>
-
-
     </section>
 
     <!-- Image + Podcast -->
