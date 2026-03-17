@@ -1,325 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Macha Makes Stuff</title>
-  <meta name="description" content="Director & Producer portfolio of Macha Rose: commercial, branded, and documentary work." />
-  <meta name="author" content="Macha Rose" />
+<title>Macha Rose | Producer & Director</title>
 
-  <!-- Bootstrap Core CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+<meta name="description" content="Director & Producer portfolio of Macha Rose: commercial, branded, and documentary work." />
+<meta name="author" content="Macha Rose" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 
-  <!-- Site CSS -->
-  <link rel="stylesheet" href="css/creative.css" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
 
-  .role-credit {
-  margin-top: 10px;
-  font-size: 15px;
-  line-height: 1.5;
+<link rel="stylesheet" href="css/creative.css" type="text/css" />
+
+<style>
+
+html { scroll-behavior: smooth; }
+
+body { padding-top:60px; }
+
+nav {
+position:fixed;
+top:0;
+left:0;
+right:0;
+background:#333;
+color:#fff;
+width:100%;
+padding:10px 16px;
+z-index:1000;
 }
 
-.role-credit strong {
-  display: block;
-  font-size: 16px;
+nav a {
+color:#fff;
+margin:0 12px;
+text-decoration:none;
 }
 
-.role-credit em {
-  color: #555;
+nav a:hover { text-decoration:underline; }
+
+header {
+background-image:url('img/macha-me-darcy-padilla.jpeg');
+background-size:cover;
+background-position:center 40%;
+min-height:60vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
 }
 
-section h1 {
-  margin-bottom: 25px;
+hr {
+max-width:50px;
+border-color:#f05f40;
+border-width:3px;
+}
+
+.header-content-inner h1,
+.header-content-inner p{
+color:red;
+font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat','Arial Black',sans-serif;
+text-shadow:0 2px 6px rgba(0,0,0,.35);
+}
+
+section { padding:50px 0; }
+
+h1 {
+font-weight:700;
+margin-bottom:25px;
+}
+
+p {
+font-size:16px;
+line-height:1.7;
 }
 
 .row {
-  margin-bottom: 25px;
+margin-bottom:35px;
 }
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-69483729-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+.role-credit {
+margin-top:12px;
+font-size:15px;
+line-height:1.6;
+}
+
+.role-credit strong {
+display:block;
+font-size:16px;
+}
+
+.role-credit em {
+color:#666;
+}
+
+/* video hover */
+
+.embed-responsive iframe {
+transition: transform .25s ease;
+}
+
+.embed-responsive:hover iframe {
+transform: scale(1.02);
+}
+
+/* image portfolio */
+
+.portfolio-thumb {
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:block;
+overflow:hidden;
+}
+
+.portfolio-thumb img {
+width:100%;
+height:100%;
+object-fit:cover;
+transition: transform .3s ease;
+}
+
+.portfolio-thumb:hover img {
+transform:scale(1.05);
+}
+
+.portfolio-overlay {
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.45);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+opacity:0;
+transition:opacity .3s ease;
+font-size:18px;
+font-weight:700;
+letter-spacing:.05em;
+text-transform:uppercase;
+}
+
+.portfolio-thumb:hover .portfolio-overlay {
+opacity:1;
+}
+
+</style>
+
 </head>
 
 <body>
 
-  <nav>
-    <a href="#top">Home</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#about">About</a>
-    <a href="#development">Projects in Development</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+<a href="#top">Home</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#about">About</a>
+<a href="#development">Projects in Development</a>
+<a href="#contact">Contact</a>
+</nav>
 
-  <header id="top">
-    <div class="header-content">
-      <div class="header-content-inner">
-        <h1>Macha Rose</h1>
-        <hr />
-        <p>Director | Producer</p>
-      </div>
-    </div>
-  </header>
+<header id="top">
+<div class="header-content">
+<div class="header-content-inner">
+<h1>Macha Rose</h1>
+<hr />
+<p>Director | Producer</p>
+</div>
+</div>
+</header>
 
-  <main class="container">
+<main class="container">
 
-    <section class="mt-4" aria-label="Quick bio blurb">
-      <p><strong>Macha (pronounced Mah-Kuh) is a director and producer who turns complex ideas into clear, emotionally resonant stories. She works across commercial, branded, and documentary projects, bringing sharp creative development, decisive on-set leadership, and a collaborative, production-minded approach. Her clients include Western Union, Grove Co., the Brooklyn Museum, AT&amp;T, Hasbro, and Nutella—brands and institutions that trust her to elevate narrative, performance, and visual tone.</strong></p>
+<section>
 
-      <p><strong>Based in NYC and the Bay Area, available for projects nationwide.</strong></p>
-    </section>
+<p><strong>Macha (pronounced Mah-Kuh) is a director and producer who turns complex ideas into clear, emotionally resonant stories. She works across commercial, branded, and documentary projects, bringing sharp creative development, decisive on-set leadership, and a collaborative production-minded approach. Her clients include Western Union, Grove Co., the Brooklyn Museum, AT&T, Hasbro and Nutella.</strong></p>
 
-    <!-- Portfolio -->
-    <section id="portfolio">
-      <h1>Portfolio</h1>
+<p><strong>Based in NYC and the Bay Area, available for projects nationwide.</strong></p>
 
-      <!-- Row 1 -->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/Yslc1EyAD1Q"
-                    title="Hasbro DJ Furby"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-          </div>
-          <p class="role-credit" style="margin-top:8px;">
-            <strong>Line Producer</strong><br>
-            <em>Hasbro · Casting · Creative producer · Crew hiring · Scheduling · Budget</em>
-          </p>
-        </div>
-
-        <div class="col-md-6">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/rdWXxT9Y7y0"
-                    title="Hasbro Furby Gold Glam"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-          </div>
-          <p class="role-credit" style="margin-top:8px;">
-            <strong>Line Producer</strong><br>
-            <em>Hasbro · Casting · Creative producer · Crew hiring · Scheduling · Budget</em>
-          </p>
-        </div>
-      </div>
-
-      <!-- Row 2 -->
-      <div class="row mt-4">
-        <div class="col-md-6">
-          <div class="embed-responsive embed-responsive-16by9">
-            <a href="https://www.attconnects.com/stories/milwaukee-fire-chief-aaron-lipskis-firstnet-story-reliable-communication-is-the-difference-between-life-and-death/"
-               target="_blank"
-               rel="noopener"
-               class="portfolio-thumb">
-              <img src="img/Lipski-2025-milwaukee.png" alt="AT&T FirstNet project still">
-              <div class="portfolio-overlay">View Project</div>
-            </a>
-          </div>
-          <p class="role-credit" style="margin-top:8px;">
-            <strong>Line Producer</strong><br>
-            <em>AT&amp;T FirstNet · Local crew hiring · Scheduling · Budget · Production management</em><br>
-            <a href="https://www.attconnects.com/stories/milwaukee-fire-chief-aaron-lipskis-firstnet-story-reliable-communication-is-the-difference-between-life-and-death/"
-               target="_blank"
-               rel="noopener">View project here</a>
-          </p>
-        </div>
-      </div>
-
-      <!-- Row 3 -->
-      <div class="row mt-4">
-        <div class="col-md-6">
-          <div class="embed-responsive embed-responsive-16by9">
-            <div style="padding:56.25% 0 0 0;position:relative;">
-              <iframe src="https://player.vimeo.com/video/909638099?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                      frameborder="0"
-                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                      style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                      title="Google Sesame Street - Wellbeing 01"></iframe>
-            </div>
-          </div>
-          <p class="role-credit" style="margin-top:8px;">
-            <strong>Producer</strong><br>
-            <em>Google · Creative development · Crew hiring · Scheduling · Budget</em>
-          </p>
-        </div>
-
-        <div class="col-md-6">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/FIosGtU65sw?si=DkGHTvY5xrb4XFte"
-                    title="Kids Relief x Roblox"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-          </div>
-          <p class="role-credit" style="margin-top:8px;">
-            <strong>Director</strong><br>
-            <em>Kids Relief x Roblox · Directing · Creative development · Casting · Locations · Crew hiring · Scheduling · Post supervision</em>
-          </p>
-        </div>
-      </div>
-
-      <!-- Row 4 -->
-      <div class="row mt-4">
-        <div class="col-md-6">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/oUWg35egbcs?si=fzOnszULuIHT9W6b"
-                    title="Nutella"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-          </div>
-          <p class="role-credit" style="margin-top:8px;">
-            <strong>Director</strong><br>
-            <em>Nutella · Directing · Creative development · Casting · Locations · Crew hiring · Scheduling · Budget</em>
-          </p>
-        </div>
-
-        <div class="col-md-6">
-          <div class="embed-responsive embed-responsive-16by9">
-            <div style="padding:56.25% 0 0 0;position:relative;">
-              <iframe src="https://player.vimeo.com/video/777136430?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                      frameborder="0"
-                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                      style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                      title="Western Union Holiday Cheer"></iframe>
-            </div>
-          </div>
-          <p class="role-credit" style="margin-top:8px;">
-            <strong>Producer</strong><br>
-            <em>Western Union · Creative development · Casting · Locations · Crew hiring · Scheduling · Budget</em>
-          </p>
-        </div>
-      </div>
-
-      <!-- Row 5 -->
-      <div class="row mt-4">
-        <div class="col-md-6">
-          <div class="embed-responsive embed-responsive-16by9">
-            <div style="padding:56.25% 0 0 0;position:relative;">
-              <iframe src="https://player.vimeo.com/video/681988215?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                      frameborder="0"
-                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                      style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                      title="Grove Co."></iframe>
-            </div>
-          </div>
-          <p class="role-credit" style="margin-top:8px;">
-            <strong>Producer</strong><br>
-            <em>Grove Co. · Creative development · Casting · Locations · Crew hiring · Scheduling · Budget · Post Supervisor</em>
-          </p>
-        </div>
-
-        <div class="col-md-6">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/Q0A2AVA0pSs?si=CeJJ6bAsUYLaEsc6"
-                    title="ASPCA"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-          </div>
-          <p class="role-credit" style="margin-top:8px;">
-            <strong>Director</strong><br>
-            <em>ASPCA · Creative development · Casting · Locations · Crew hiring · Scheduling · Budget</em>
-          </p>
-        </div>
-      </div>
-
-      <!-- Hero Video -->
-      <div class="row mt-4">
-        <div class="col-md-12">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/V8AT2fGBfmg?si=c4PpwIKKIqkV6pN3"
-                    title="figuration - short film"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-          </div>
-          <p><em>figuration</em> — a short film I directed for a 7-day competition, currently streaming on Labocine. This is a passion project born from my experience as a laboratory scientist, my interest in epidemiology, and how those intersect with visual storytelling.</p>
-        </div>
-      </div>
-    </section>
-
-   <!-- About -->
-<section id="about">
-  <h1>About</h1>
-  <p>Hi. I like making stuff. I'm pretty open to whatever type of video project, as long as it's interesting, and maybe a little challenging. Here are 10 random facts about me.</p>
-
-  <ol>
-    <li>Yes, I genuinely like spreadsheets.</li>
-
-    <li>I like to cook and have a fledgling food content instagram 
-      <a href="https://www.instagram.com/macha.cooks/" target="_blank" rel="noopener">@macha.cooks</a>.
-    </li>
-
-    <li>If I haven't told you I'm from Oakland, I will like 3 times at some point today. Yes, I have full bicoastal capabilities (for the Bay Area and New York, obviously).</li>
-
-    <li>I have directed several short films, and have found I love Black Mirror style Sci-Fi — I have a past career in microbiology and genetics.</li>
-
-    <li><em>Coffee &amp; Cigarettes</em> (Jim Jarmusch) taught me that filmmaking can be whatever you want it to be… I’m also a professor of film studies.</li>
-
-    <li>I can produce the heck out of your project by staying in my lane, or heavily collaborating. Your call.</li>
-
-    <li>I'm passionate about and an advocate for food allergy awareness, which translates to - I take crew food and crafty VERY seriously.</li>
-
-    <li>I know a lot of really talented people — both union and non-union — and how to find them.</li>
-
-    <li>I love beagles and chihuahuas. Especially cheagles. RIP Cesar.</li>
-
-    <li>Dream job: exploring food, culture, art, environment, and their intersections with wealth and power (or: producer dream — regular hours and regular pay, lol).</li>
-  </ol>
 </section>
 
-    <!-- Projects in Development -->
-    <section id="development">
-      <h1>Projects in Development</h1>
+<section id="portfolio">
 
-      <div class="development-entry">
-        <h3><em>Winds of Change</em></h3>
-        <p>An in-development conservation documentary short about golden eagles and wind farms. This film explores the intersection of green energy, conservation, California, and the people fighting on both sides of the green movement.</p>
-      </div>
+<h1>Portfolio</h1>
 
-      <div class="development-entry">
-        <h3><em>Soft Authoritarianism and Other Bedtime Stories</em></h3>
-        <p>An interdisciplinary digital storytelling project and experimental speculative fiction work exploring power, systems, futuring, and everyday life. The project lives between writing, code, visual language, and narrative worldbuilding.</p>
-      </div>
-    </section>
+<!-- Hasbro -->
 
-    <!-- Contact -->
-    <section id="contact" style="background: beige;">
-      <h1>Contact</h1>
-      <p><a href="mailto:maka.harper@gmail.com">maka.harper@gmail.com</a></p>
-      <p><a href="https://www.macharose.com" target="_blank" rel="noopener">macharose.com</a></p>
-      <p><a href="https://www.threads.net/@macharose" target="_blank" rel="noopener">@macharose on Threads</a></p>
-      <p><a href="https://www.instagram.com/macharose/" target="_blank" rel="noopener">@macharose on Instagram</a></p>
-    </section>
+<div class="row">
 
-  </main>
+<div class="col-md-6">
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="https://www.youtube.com/embed/Yslc1EyAD1Q"
+frameborder="0"
+allowfullscreen></iframe>
+</div>
+<p class="role-credit">
+<strong>Line Producer</strong>
+<em>Hasbro · Casting · Creative producer · Crew hiring · Scheduling · Budget</em>
+</p>
+</div>
 
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/jquery.fittext.js"></script>
-  <script src="js/creative.js"></script>
+<div class="col-md-6">
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="https://www.youtube.com/embed/rdWXxT9Y7y0"
+frameborder="0"
+allowfullscreen></iframe>
+</div>
+<p class="role-credit">
+<strong>Line Producer</strong>
+<em>Hasbro · Casting · Creative producer · Crew hiring · Scheduling · Budget</em>
+</p>
+</div>
+
+</div>
+
+<!-- ATT -->
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="embed-responsive embed-responsive-16by9">
+
+<a href="https://www.attconnects.com/stories/milwaukee-fire-chief-aaron-lipskis-firstnet-story-reliable-communication-is-the-difference-between-life-and-death/"
+target="_blank"
+rel="noopener"
+class="portfolio-thumb">
+
+<img src="img/Lipski-2025-milwaukee.png">
+
+<div class="portfolio-overlay">View Project</div>
+
+</a>
+
+</div>
+
+<p class="role-credit">
+
+<strong>Line Producer</strong>
+
+<em>AT&T FirstNet · Local crew hiring · Scheduling · Budget · Production management</em>
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Google + Roblox -->
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="embed-responsive embed-responsive-16by9">
+
+<iframe src="https://player.vimeo.com/video/909638099"
+frameborder="0"
+allowfullscreen></iframe>
+
+</div>
+
+<p class="role-credit">
+
+<strong>Producer</strong>
+
+<em>Google · Creative development · Crew hiring · Scheduling · Budget</em>
+
+</p>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="embed-responsive embed-responsive-16by9">
+
+<iframe src="https://www.youtube.com/embed/FIosGtU65sw"
+frameborder="0"
+allowfullscreen></iframe>
+
+</div>
+
+<p class="role-credit">
+
+<strong>Director</strong>
+
+<em>Kids Relief x Roblox · Directing · Creative development · Casting · Locations · Crew hiring · Scheduling · Post supervision</em>
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Nutella + Western Union -->
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="embed-responsive embed-responsive-16by9">
+
+<iframe src="https://www.youtube.com/embed/oUWg35egbcs"
+frameborder="0"
+allowfullscreen></iframe>
+
+</div>
+
+<p class="role-credit">
+
+<strong>Director</strong>
+
+<em>Nutella · Directing · Creative development · Casting · Locations · Crew hiring · Scheduling · Budget</em>
+
+</p>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="embed-responsive embed-responsive-16by9">
+
+<iframe src="https://player.vimeo.com/video/777136430"
+frameborder="0"
+allowfullscreen></iframe>
+
+</div>
+
+<p class="role-credit">
+
+<strong>Producer</strong>
+
+<em>Western Union · Creative development · Casting · Locations · Crew hiring · Scheduling · Budget</em>
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Grove + ASPCA -->
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="embed-responsive embed-responsive-16by9">
+
+<iframe src="https://player.vimeo.com/video/681988215"
+frameborder="0"
+allowfullscreen></iframe>
+
+</div>
+
+<p class="role-credit">
+
+<strong>Producer</strong>
+
+<em>Grove Co. · Creative development · Casting · Locations · Crew hiring · Scheduling · Budget · Post Supervisor</em>
+
+</p>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="embed-responsive embed-responsive-16by9">
+
+<iframe src="https://www.youtube.com/embed/Q0A2AVA0pSs"
+frameborder="0"
+allowfullscreen></iframe>
+
+</div>
+
+<p class="role-credit">
+
+<strong>Director</strong>
+
+<em>ASPCA · Creative development · Casting · Locations · Crew hiring · Scheduling · Budget</em>
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h1>About</h1>
+
+<p>Hi. I like making stuff. I'm pretty open to whatever type of video project, as long as it's interesting, and maybe a little challenging. Here are 10 random facts about me.</p>
+
+<ol>
+
+<li>Yes, I genuinely like spreadsheets.</li>
+
+<li>I like to cook and have a fledgling food content instagram <a href="https://www.instagram.com/macha.cooks/" target="_blank">@macha.cooks</a>.</li>
+
+<li>If I haven't told you I'm from Oakland, I will like 3 times at some point today. Yes, I have full bicoastal capabilities (for the Bay Area and New York, obviously).</li>
+
+<li>I have directed several short films, and have found I love Black Mirror style Sci-Fi — I have a past career in microbiology and genetics.</li>
+
+<li><em>Coffee & Cigarettes</em> (Jim Jarmusch) taught me that filmmaking can be whatever you want it to be… I’m also a professor of film studies.</li>
+
+<li>I can produce the heck out of your project by staying in my lane, or heavily collaborating. Your call.</li>
+
+<li>I'm passionate about and an advocate for food allergy awareness, which translates to - I take crew food and crafty VERY seriously.</li>
+
+<li>I know a lot of really talented people — both union and non-union — and how to find them.</li>
+
+<li>I love beagles and chihuahuas. Especially cheagles. RIP Cesar.</li>
+
+<li>Dream job: exploring food, culture, art, environment, and their intersections with wealth and power (or: producer dream — regular hours and regular pay, lol).</li>
+
+</ol>
+
+</section>
+
+<section id="development">
+
+<h1>Selected Projects in Development</h1>
+
+<p><strong>Winds of Change</strong><br>
+An in-development conservation documentary short about Golden Eagles and wind farms. The film explores the intersection of green energy, conservation, California, and the people fighting on both sides of the green movement.</p>
+
+<p><strong>Soft Authoritarianism and Other Bedtime Stories</strong><br>
+An interdisciplinary digital storytelling project combining speculative fiction, code, and visual narrative exploring power, systems, futuring, and everyday life.</p>
+
+</section>
+
+<section id="contact" style="background:beige;">
+
+<h1>Contact</h1>
+
+<p><a href="mailto:macha@macharose.com">macha@macharose.com</a></p>
+
+<p><a href="https://www.instagram.com/macharose/" target="_blank">@macharose on Instagram</a></p>
+
+</section>
+
+</main>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/creative.js"></script>
+
 </body>
 </html>
