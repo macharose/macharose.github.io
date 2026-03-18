@@ -1,460 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<title>Macha Rose | Producer & Director</title>
-
-<meta name="description" content="Director & Producer portfolio of Macha Rose: commercial, branded, and documentary work." />
-<meta name="author" content="Macha Rose" />
-
-<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
-
-<link rel="stylesheet" href="css/creative.css" type="text/css" />
-
 <style>
-
 html { scroll-behavior: smooth; }
 
 body { padding-top:60px; }
 
 nav {
-position:fixed;
-top:0;
-left:0;
-right:0;
-background:#333;
-color:#fff;
-width:100%;
-padding:10px 16px;
-z-index:1000;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  background:#333;
+  color:#fff;
+  width:100%;
+  padding:10px 16px;
+  z-index:1000;
 }
 
 nav a {
-color:#fff;
-margin:0 12px;
-text-decoration:none;
+  color:#fff;
+  margin:0 12px;
+  text-decoration:none;
 }
 
 nav a:hover { text-decoration:underline; }
 
 header {
-background-image:url('img/macha-me-darcy-padilla.jpeg');
-background-size:cover;
-background-position:center 40%;
-min-height:60vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
+  background-image:url('img/macha-me-darcy-padilla.jpeg');
+  background-size:cover;
+  background-position:center 40%;
+  min-height:60vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
 }
 
 hr {
-max-width:50px;
-border-color:#f05f40;
-border-width:3px;
+  max-width:50px;
+  border-color:#f05f40;
+  border-width:3px;
 }
 
 .header-content-inner h1,
-.header-content-inner p{
-color:red;
-font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat','Arial Black',sans-serif;
-text-shadow:0 2px 6px rgba(0,0,0,.35);
+.header-content-inner p {
+  color:red;
+  font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat','Arial Black',sans-serif;
+  text-shadow:0 2px 6px rgba(0,0,0,.35);
 }
 
 section { padding:50px 0; }
 
 h1 {
-font-weight:700;
-margin-bottom:25px;
+  font-weight:700;
+  margin-bottom:25px;
 }
 
 p {
-font-size:16px;
-line-height:1.7;
+  font-size:16px;
+  line-height:1.7;
 }
 
 .row {
-margin-bottom:35px;
+  margin-bottom:35px;
 }
 
 .role-credit {
-margin-top:12px;
-font-size:15px;
-line-height:1.6;
+  margin-top:12px;
+  font-size:15px;
+  line-height:1.6;
 }
 
 .role-credit strong {
-display:block;
-font-size:16px;
+  display:block;
+  font-size:16px;
 }
 
 .role-credit em {
-color:#666;
+  color:#666;
+}
+
+.embed-responsive {
+  position: relative;
+  overflow: hidden;
 }
 
 /* video hover */
-
 .embed-responsive iframe {
-transition: transform .25s ease;
+  transition: transform .25s ease;
 }
 
 .embed-responsive:hover iframe {
-transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 /* image portfolio */
-
 .portfolio-thumb {
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-display:block;
-overflow:hidden;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:block;
+  overflow:hidden;
 }
 
 .portfolio-thumb img {
-width:100%;
-height:100%;
-object-fit:cover;
-transition: transform .3s ease;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition: transform .3s ease;
 }
 
 .portfolio-thumb:hover img {
-transform:scale(1.05);
+  transform:scale(1.05);
 }
 
 .portfolio-overlay {
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.45);
-color:white;
-display:flex;
-align-items:center;
-justify-content:center;
-opacity:0;
-transition:opacity .3s ease;
-font-size:18px;
-font-weight:700;
-letter-spacing:.05em;
-text-transform:uppercase;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.45);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  transition:opacity .3s ease;
+  font-size:18px;
+  font-weight:700;
+  letter-spacing:.05em;
+  text-transform:uppercase;
 }
 
 .portfolio-thumb:hover .portfolio-overlay {
-opacity:1;
+  opacity:1;
 }
-
 </style>
-
-</head>
-
-<body>
-
-<nav>
-<a href="#top">Home</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#about">About</a>
-<a href="#development">Projects in Development</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<header id="top">
-<div class="header-content">
-<div class="header-content-inner">
-<h1>Macha Rose</h1>
-<hr />
-<p>Director | Producer</p>
-</div>
-</div>
-</header>
-
-<main class="container">
-
-<section>
-
-<p><strong>Macha (pronounced Mah-Kuh) is a director and producer who turns complex ideas into clear, emotionally resonant stories. She works across commercial, branded, and documentary projects, bringing sharp creative development, decisive on-set leadership, and a collaborative production-minded approach. Her clients include Western Union, Grove Co., the Brooklyn Museum, AT&T, Hasbro and Nutella.</strong></p>
-
-<p><strong>Based in NYC and the Bay Area, available for projects nationwide.</strong></p>
-
-</section>
-
-<section id="portfolio">
-
-<h1>Portfolio</h1>
-
-<!-- Hasbro -->
-
-<div class="row">
-
-<div class="col-md-6">
-<div class="embed-responsive embed-responsive-16by9">
-<iframe src="https://www.youtube.com/embed/Yslc1EyAD1Q"
-frameborder="0"
-allowfullscreen></iframe>
-</div>
-<p class="role-credit">
-<strong>Line Producer</strong>
-<em>Hasbro · Casting · Creative producer · Crew hiring · Scheduling · Budget</em>
-</p>
-</div>
-
-<div class="col-md-6">
-<div class="embed-responsive embed-responsive-16by9">
-<iframe src="https://www.youtube.com/embed/rdWXxT9Y7y0"
-frameborder="0"
-allowfullscreen></iframe>
-</div>
-<p class="role-credit">
-<strong>Line Producer</strong>
-<em>Hasbro · Casting · Creative producer · Crew hiring · Scheduling · Budget</em>
-</p>
-</div>
-
-</div>
-
-<!-- ATT -->
-
-<div class="row">
-
-<div class="col-md-6">
-
-<div class="embed-responsive embed-responsive-16by9">
-
-<a href="https://www.attconnects.com/stories/milwaukee-fire-chief-aaron-lipskis-firstnet-story-reliable-communication-is-the-difference-between-life-and-death/"
-target="_blank"
-rel="noopener"
-class="portfolio-thumb">
-
-<img src="img/Lipski-2025-milwaukee.png">
-
-<div class="portfolio-overlay">View Project</div>
-
-</a>
-
-</div>
-
-<p class="role-credit">
-
-<strong>Line Producer</strong>
-
-<em>AT&T FirstNet · Local crew hiring · Scheduling · Budget · Production management</em>
-
-</p>
-
-</div>
-
-</div>
-
-<!-- Google + Roblox -->
-
-<div class="row">
-
-<div class="col-md-6">
-
-<div class="embed-responsive embed-responsive-16by9">
-
-<iframe src="https://player.vimeo.com/video/909638099"
-frameborder="0"
-allowfullscreen></iframe>
-
-</div>
-
-<p class="role-credit">
-
-<strong>Producer</strong>
-
-<em>Google · Creative development · Crew hiring · Scheduling · Budget</em>
-
-</p>
-
-</div>
-
-<div class="col-md-6">
-
-<div class="embed-responsive embed-responsive-16by9">
-
-<iframe src="https://www.youtube.com/embed/FIosGtU65sw"
-frameborder="0"
-allowfullscreen></iframe>
-
-</div>
-
-<p class="role-credit">
-
-<strong>Director</strong>
-
-<em>Kids Relief x Roblox · Directing · Creative development · Casting · Locations · Crew hiring · Scheduling · Post supervision</em>
-
-</p>
-
-</div>
-
-</div>
-
-<!-- Nutella + Western Union -->
-
-<div class="row">
-
-<div class="col-md-6">
-
-<div class="embed-responsive embed-responsive-16by9">
-
-<iframe src="https://www.youtube.com/embed/oUWg35egbcs"
-frameborder="0"
-allowfullscreen></iframe>
-
-</div>
-
-<p class="role-credit">
-
-<strong>Director</strong>
-
-<em>Nutella · Directing · Creative development · Casting · Locations · Crew hiring · Scheduling · Budget</em>
-
-</p>
-
-</div>
-
-<div class="col-md-6">
-
-<div class="embed-responsive embed-responsive-16by9">
-
-<iframe src="https://player.vimeo.com/video/777136430"
-frameborder="0"
-allowfullscreen></iframe>
-
-</div>
-
-<p class="role-credit">
-
-<strong>Producer</strong>
-
-<em>Western Union · Creative development · Casting · Locations · Crew hiring · Scheduling · Budget</em>
-
-</p>
-
-</div>
-
-</div>
-
-<!-- Grove + ASPCA -->
-
-<div class="row">
-
-<div class="col-md-6">
-
-<div class="embed-responsive embed-responsive-16by9">
-
-<iframe src="https://player.vimeo.com/video/681988215"
-frameborder="0"
-allowfullscreen></iframe>
-
-</div>
-
-<p class="role-credit">
-
-<strong>Producer</strong>
-
-<em>Grove Co. · Creative development · Casting · Locations · Crew hiring · Scheduling · Budget · Post Supervisor</em>
-
-</p>
-
-</div>
-
-<div class="col-md-6">
-
-<div class="embed-responsive embed-responsive-16by9">
-
-<iframe src="https://www.youtube.com/embed/Q0A2AVA0pSs"
-frameborder="0"
-allowfullscreen></iframe>
-
-</div>
-
-<p class="role-credit">
-
-<strong>Director</strong>
-
-<em>ASPCA · Creative development · Casting · Locations · Crew hiring · Scheduling · Budget</em>
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="about">
-
-<h1>About</h1>
-
-<p>Hi. I like making stuff. I'm pretty open to whatever type of video project, as long as it's interesting, and maybe a little challenging. Here are 10 random facts about me.</p>
-
-<ol>
-
-<li>Yes, I genuinely like spreadsheets.</li>
-
-<li>I like to cook and have a fledgling food content instagram <a href="https://www.instagram.com/macha.cooks/" target="_blank">@macha.cooks</a>.</li>
-
-<li>If I haven't told you I'm from Oakland, I will like 3 times at some point today. Yes, I have full bicoastal capabilities (for the Bay Area and New York, obviously).</li>
-
-<li>I have directed several short films, and have found I love Black Mirror style Sci-Fi — I have a past career in microbiology and genetics.</li>
-
-<li><em>Coffee & Cigarettes</em> (Jim Jarmusch) taught me that filmmaking can be whatever you want it to be… I’m also a professor of film studies.</li>
-
-<li>I can produce the heck out of your project by staying in my lane, or heavily collaborating. Your call.</li>
-
-<li>I'm passionate about and an advocate for food allergy awareness, which translates to - I take crew food and crafty VERY seriously.</li>
-
-<li>I know a lot of really talented people — both union and non-union — and how to find them.</li>
-
-<li>I love beagles and chihuahuas. Especially cheagles. RIP Cesar.</li>
-
-<li>Dream job: exploring food, culture, art, environment, and their intersections with wealth and power (or: producer dream — regular hours and regular pay, lol).</li>
-
-</ol>
-
-</section>
-
-<section id="development">
-
-<h1>Selected Projects in Development</h1>
-
-<p><strong>Winds of Change</strong><br>
-An in-development conservation documentary short about Golden Eagles and wind farms. The film explores the intersection of green energy, conservation, California, and the people fighting on both sides of the green movement.</p>
-
-<p><strong>Soft Authoritarianism and Other Bedtime Stories</strong><br>
-An interdisciplinary digital storytelling project combining speculative fiction, code, and visual narrative exploring power, systems, futuring, and everyday life.</p>
-
-</section>
-
-<section id="contact" style="background:beige;">
-
-<h1>Contact</h1>
-
-<p><a href="mailto:macha@macharose.com">macha@macharose.com</a></p>
-
-<p><a href="https://www.instagram.com/macharose/" target="_blank">@macharose on Instagram</a></p>
-
-</section>
-
-</main>
-
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/jquery.fittext.js"></script>
-<script src="js/creative.js"></script>
-
-</body>
-</html>
